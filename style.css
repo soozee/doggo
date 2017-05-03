@@ -1,0 +1,44 @@
+body {
+	background-color: #5C3E7C;
+}
+
+h1 {
+	color: #fff;
+	font-size: 40px;
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+	margin: 0 auto;
+	text-align: center;
+}
+
+img {
+	align-content: center;
+	width: 30%;
+	border: thick;
+	border-color: #fff;
+	padding: 20px;
+	display: block;
+	margin: 0 auto;
+}
+
+button {
+	background-color: #fff;
+	border: none;
+	color: #5C3E7C;
+	padding: 15px 30px;
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	font-size: 20px;
+	transition-duration: 0.4s;
+	font-weight: 500;
+}
+
+button:hover {
+	background-color: #181818;
+	color: #fff;
+}
+
+.wrapper {
+	padding: 20px;
+}
