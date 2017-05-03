@@ -6,8 +6,7 @@
 	var img = document.getElementById("doggoimg");
 	var pupperPics = [
 		"http://2static.fjcdn.com/pictures/D_aa7b67_5706532.jpg",
-		"http://scontent-sea1-1.cdninstagram.com/t51.2885-15/e35/13166758_1606789379636046_1408643305_n.jpg?ig_cache_key=MTI0ODUxODgzNDE5NjYyNzM5Ng%3D%3D.2",
-		"http://imgur.com/jWEVUxH",
+		"http://scontent-sea1-1.cdninstagram.com/t51.2885-15/e35/13166758_1606789379636046_1408643305_n.jpg",
 		"https://i.redd.it/hcspqfkibv5x.gif",
 		"http://funnypictures2.fjcdn.com/funny_gifs/Animal_5c3a82_5880720.gif",
 		"https://img.buzzfeed.com/buzzfeed-static/static/enhanced/webdr02/2013/8/20/10/anigif_enhanced-buzz-32136-1377010400-18.gif",
@@ -23,7 +22,9 @@
 			max = Math.floor(max);
 			return Math.floor(Math.random() * (max - min + 1)) + min;
 		}
-		debugger;
-		return (img.src = pupperPics);
+		var min = 0;
+		var max = pupperPics.length - 1;
+		var offSet = getRandomIntInclusive(min,max);
+		img.src = pupperPics[offSet];
 	}
 })();
